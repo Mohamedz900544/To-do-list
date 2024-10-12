@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const overpage     = document.querySelector(".favDialog");
   const TaskButton   = document.querySelector(".button-task");
   const Taskbarr   = document.querySelector(".over-input");
-  const tazk       = document.querySelector(".weee");
+  const clearhr       = document.querySelector(".task-list hr");
   const themeToggleButton = document.getElementById("nononno"); // New: Selecting the theme toggle button
   let activeCategory = "";
 
@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", () => {
           break;
         case "completed":
           task.style.display = isCompleted ? "flex" : "none";
-          if(isCompleted) conter++;
+          if(isCompleted) conter++ , completedCounter++;
           break;
         case "all":
         default:

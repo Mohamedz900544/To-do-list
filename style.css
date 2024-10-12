@@ -276,10 +276,15 @@ hr{
     background-color: #4CAF50;
     border-radius: 50%; /* Keep it a perfect circle */
     margin: 3%; /* Margin can remain the same */
+    display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
-    text-align: center;
     padding: 0;
+}
+.circle i{
+  margin-top: 2%;
+
 }
 
 .firsthorv{
@@ -510,7 +515,7 @@ hr{
 body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
+body.dark hr,
 body.dark.org {
     background-color: #1C273C; /* Dark background */
 }
@@ -606,6 +611,9 @@ body.dark .left-list li:hover {
         display: flex;
         
     }
+    .left-list {
+        width: 80%;
+    }
     .tasks{
         display: none;
     }
@@ -626,9 +634,16 @@ body.dark .left-list li:hover {
         /* z-index: 1.5; */
 
     }
+    .button-task{
+        width: 58%;
+    }
     .circle{
-        width: 8%;
-        height: 38%;
+    height: 3vw;
+    width: 3vw;
+    max-width: 50px;
+    max-height: 50px;
+    min-width: 30px;
+    min-height: 30px
     }
     .content-list{
         width: 60%;
